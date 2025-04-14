@@ -1,0 +1,81 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  color: #00d8ff;
+  animation: fadeSlideDown 1.2s ease-out;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.button-grid button {
+  background-color: #00d8ff;
+  color: #000;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-grid button:hover {
+  background-color: #00a7cc;
+  transform: scale(1.05);
+  color: white;
+}
+
+
+.footer-brand {
+  position: absolute;
+  bottom: 20px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.4rem;
+  color: #ffffffcc;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 2px;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.8;
+}
